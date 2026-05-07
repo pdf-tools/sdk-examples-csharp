@@ -58,7 +58,7 @@ namespace PdfToolsBuiltInCertify
             {
                 // By default, a test license key is active. In this case, a watermark is added to the output. 
                 // If you have a license key, please uncomment the following call and set the license key.
-                // Sdk.Initialize("insert-license-key-here");
+                // Sdk.Initialize("<-- insert license key -->");
 
                 // Certify a PDF document
                 Certify(args[0], args[1], args[2], args[3]);

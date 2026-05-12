@@ -15,6 +15,11 @@ Any supported version of .NET installed:
 - .NET and .NET Core: 2.0, 2.1, 2.2, 3.0, 3.1, 5.0, 6.0, 7.0, 8.0, 9.0
 - .NET Framework: 4.6.1, 4.6.2, 4.7, 4.7.1, 4.7.2, 4.8, 4.8.1
 
+This sample requires Pdftools OCR Service installation. To get started, review the following guides:
+
+- [Getting started on Windows](https://www.pdf-tools.com/docs/ocr-service/getting-started/windows/set-up-with-sdk/)
+- [Getting started with Docker](https://www.pdf-tools.com/docs/ocr-service/getting-started/docker/)
+
 ### Command line
 
 1. Run in the sample folder:

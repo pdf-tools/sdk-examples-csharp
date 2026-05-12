@@ -51,7 +51,7 @@ namespace PdfToolsValidateConvert
             {
                 // By default, a test license key is active. In this case, a watermark is added to the output. 
                 // If you have a license key, please uncomment the following call and set the license key.
-                // Sdk.Initialize("insert-license-key-here");
+                // Sdk.Initialize("<-- insert license key -->");
 
                 // Convert the document to PDF/A-2b
                 ConvertIfNotConforming(args[0], args[1], new Conformance(2, Conformance.PdfALevel.B));
@@ -74,11 +74,11 @@ namespace PdfToolsValidateConvert
             var analysisOptions = new AnalysisOptions() { Conformance = conformance };
 
             // Run the analysis, and check the results.
-            // Only proceed if document is not conforming.
+            // Only proceed if conversion is recommended.
             var analysisResult = validator.Analyze(inDoc, analysisOptions);
-            if (analysisResult.IsConforming)
+            if (!analysisResult.IsConversionRecommended)
             {
-                Console.WriteLine($"Document conforms to {inDoc.Conformance} already.");
+                Console.WriteLine($"No conversion required for document with conformance {inDoc.Conformance}.");
                 return;
             }
 

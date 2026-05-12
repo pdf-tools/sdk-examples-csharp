@@ -25,6 +25,7 @@
 
 using System;
 using System.IO;
+using PdfTools;
 using PdfTools.Pdf;
 using PdfTools.Extraction;
 using PdfTools.Geometry.Units;
@@ -51,7 +52,7 @@ namespace PdfToolsExtractTextLayout
             {
                 // By default, a test license key is active. In this case, a watermark is added to the output. 
                 // If you have a license key, please uncomment the following call and set the license key.
-                // Sdk.Initialize("insert-license-key-here");
+                // Sdk.Initialize("<-- insert license key -->");
 
                 ExtractText(args[0], args[1]);
                 Console.WriteLine("Execution successful.");

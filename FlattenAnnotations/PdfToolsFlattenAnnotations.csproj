@@ -17,6 +17,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="PdfTools" Version="1.17.0" />
+    <PackageReference Include="PdfTools" Version="1.18.0" />
   </ItemGroup>
 </Project>

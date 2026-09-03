@@ -1,0 +1,29 @@
+{
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+
+  extends: ["config:recommended"],
+
+  semanticCommits: "enabled",
+  semanticCommitType: "chore",
+  semanticCommitScope: "deps",
+
+  branchPrefix: "nojira/",
+  commitMessageSuffix: "[NOJIRA]",
+
+  dependencyDashboard: true,
+
+  packageRules: [
+    {
+      matchPackageNames: ["*"],
+      enabled: false,
+    },
+    {
+      matchPackageNames: ["PdfTools"],
+      enabled: true,
+      groupName: "PdfTools SDK",
+      commitMessageTopic: "PdfTools SDK",
+    },
+  ],
+
+  schedule: ["before 6am on monday"],
+}
